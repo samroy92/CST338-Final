@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.papacasper.cst_final.MainActivity">
+
+    <TextView
+        android:text="Want a fast car?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Choose from the following options below to customize your new ride!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescription"
+        android:textSize="10sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainLayout"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/textDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Engine:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textEngine" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/engines"
+            android:id="@+id/spinnerEngine" />
+
+        <TextView
+            android:text="Transmission:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTransmission" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/transmission"
+            android:id="@+id/spinnerTransmission" />
+
+        <TextView
+            android:text="Color:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textColor" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/color"
+            android:id="@+id/spinnerColor" />
+
+        <TextView
+            android:text="Engine Extras:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textEngineAccessories" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/engineaccessories"
+            android:id="@+id/spinnerEngineAccessories" />
+
+        <TextView
+            android:text="Transmission Extras:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textTransmissionAccessories" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/transmissionaccessories"
+            android:id="@+id/spinnerTransmissionAccessories" />
+
+        <TextView
+            android:text="Weight Reduction:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWeight" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/weight"
+            android:id="@+id/spinnerWeight" />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:id="@+id/buttonSubmit" />
+
+        <TextView
+            android:text="Power Meter:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPowerMeter"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dip"
+            android:maxHeight="50dip"
+            android:id="@+id/progressPowerMeter" />
+
+        <TextView
+            android:text="Horsepower:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHorsepowerTitle"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHorsepower"
+            android:textColor="#ff0000"
+            android:text="100"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="Weight (lbs):"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWeight"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="2500"
+            android:textColor="#ff0000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textWeightValue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="0 to 60:  "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textZeroSixty"
+            android:textSize="12sp" />
+
+        <TextView
+            android:text="10.0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:id="@+id/textZeroSityValue"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

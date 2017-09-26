@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">CST-Final</string>
+
+    <string-array name="engines">
+        <item>1.4L 4cyl</item>
+        <item>2.0L 4cyl</item>
+        <item>2.5L 4cyl</item>
+        <item>3.0L 6cyl</item>
+        <item>4.0L 6cyl</item>
+        <item>6.2L 8cyl</item>
+    </string-array>
+    
+    <string-array name="transmission">
+        <item>6-speed Manual</item>
+        <item>7-speed Automatic</item>
+    </string-array>
+    
+    <string-array name="color">
+        <item>White</item>
+        <item>Black</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Silver</item>
+    </string-array>
+
+    <string-array name="engineaccessories">
+        <item>No extras</item>
+        <item>Turbocharger</item>
+        <item>Twin Turbo</item>
+    </string-array>
+
+    <string-array name="transmissionaccessories">
+        <item>No extras</item>
+        <item>Short Shifter</item>
+        <item>Hydraulic Shifter</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>No weight reduction</item>
+        <item>Remove seats</item>
+    </string-array>
+
+</resources>
